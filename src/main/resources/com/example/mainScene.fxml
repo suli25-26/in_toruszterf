@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <Button layoutX="272.0" layoutY="217.0" mnemonicParsing="false" onAction="#onClickCalcButton" text="Számít" />
+      <Label layoutX="216.0" layoutY="32.0" text="Tórusz térfogata" textFill="#12055b">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="92.0" text="Sugár (r)" />
+      <Label layoutX="149.0" layoutY="127.0" text="Távolság (R)" />
+      <Label layoutX="142.0" layoutY="274.0" text="Térfogat" />
+      <Label layoutX="184.0" layoutY="336.0" text="Erős István, IN, 2026-04-17" textFill="#ee0808" />
+      <TextField fx:id="radiusField" layoutX="224.0" layoutY="88.0" />
+      <TextField fx:id="distanceField" layoutX="224.0" layoutY="132.0" />
+      <TextField fx:id="volumeField" layoutX="210.0" layoutY="270.0" />
+   </children>
+</Pane>
