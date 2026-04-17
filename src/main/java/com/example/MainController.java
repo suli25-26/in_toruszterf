@@ -17,7 +17,20 @@ public class MainController {
 
     @FXML
     void onClickCalcButton(ActionEvent event) {
-
+        this.startCalc();
     }
+
+    void startCalc() {
+        String radiusStr = radiusField.getText();
+        double radius = Double.parseDouble(radiusStr);
+
+        String distanceStr = distanceField.getText();
+        double distance = Double.parseDouble(distanceStr);
+
+        double volume = 0;
+        volumeField.setText(String.valueOf(volume));
+    }
+
+
 
 }
